@@ -37,7 +37,6 @@ header nav ul li a:hover {
     color: #1e90ff;
 }
 
-/* Collection Section Styling */
 #collection {
     padding: 2rem;
     text-align: center;
@@ -55,14 +54,14 @@ p {
     color: #555;
 }
 
-.collection-grid {
+.collection-cfu {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.item {
+.cfu {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -71,12 +70,12 @@ p {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.item:hover {
+.cfu:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.item a {
+.cfu a {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
@@ -84,8 +83,36 @@ p {
     transition: color 0.3s ease;
 }
 
-.item a:hover {
+.cfu a:hover {
     color: #1e90ff;
+}
+
+.unit-projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -96,4 +123,19 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .collection-cfu {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .unit-projects {
+        flex-direction: column;
+        align-items: center;
+    }
 }

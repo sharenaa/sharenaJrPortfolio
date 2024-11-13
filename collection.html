@@ -21,6 +21,7 @@
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: none;
         }
 
         iframe:hover {
@@ -38,6 +39,7 @@
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 20px;
             padding: 20px;
+            justify-content:center;
         }
 
         .cfu {
@@ -47,6 +49,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
         }
 
         .cfu:hover {
@@ -113,33 +116,33 @@
     <p>Here are some of the code projects I've worked on during my Web and App Development course. Click on the links to view my work!</p>
 
     <div class="collection-cfu">
-        <div class="cfu"><a href="#cfu1">CFU1</a></div>
-        <div class="cfu"><a href="#cfu2">CFU2</a></div>
-        <div class="cfu"><a href="#cfu3">CFU3</a></div>
-        <div class="cfu"><a href="#cfu4">CFU4</a></div>
-        <div class="cfu"><a href="#cfu5">CFU5</a></div>
-        <div class="cfu"><a href="#cfu6">CFU6</a></div>
-        <div class="cfu"><a href="#cfu7">CFU7</a></div>
-        <div class="cfu"><a href="#cfu8">CFU8</a></div>
-        <div class="cfu"><a href="#cfu9">CFU9</a></div>
-        <div class="cfu"><a href="#cfu10">CFU10</a></div>
-        <div class="cfu"><a href="#cfu11">CFU11</a></div>
-        <div class="cfu"><a href="#cfu12">CFU12</a></div>
+        <button class="cfu" onclick="showIframe('cfu1')"><a href="">CFU1</a></button>
+        <button class="cfu" onclick="showIframe('cfu2')"><a href="">CFU2</a></button>
+        <button class="cfu" onclick="showIframe('cfu3')"><a href="">CFU3</a></button>
+        <button class="cfu" onclick="showIframe('cfu4')"><a href="">CFU4</a></button>
+        <button class="cfu" onclick="showIframe('cfu5')"><a href="">CFU5</a></button>
+        <button class="cfu" onclick="showIframe('cfu6')"><a href="">CFU6</a></button>
+        <button class="cfu" onclick="showIframe('cfu7')"><a href="">CFU7</a></button>
+        <button class="cfu" onclick="showIframe('cfu8')"><a href="">CFU8</a></button>
+        <button class="cfu" onclick="showIframe('cfu9')"><a href="">CFU9</a></button>
+        <button class="cfu" onclick="showIframe('cfu10')"><a href="">CFU10</a></button>
+        <button class="cfu" onclick="showIframe('cfu11')"><a href="">CFU11</a></button>
+        <button class="cfu" onclick="showIframe('cfu12')"><a href="">CFU12</a></button>
     </div>
 
     <div class="iframe-container">
-        <iframe src="https://py3.codeskulptor.org/#user309_5GeL8Ff0CIYsCNA.py" title="CFU1"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_hQchAlvFeACOYjc.py" title="CFU2"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_orklQA2PJ8y3VqF.py" title="CFU3"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_We3ofbX961SxR8c.py" title="CFU4"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_WJAnw9uQDV6uJlQ.py" title="CFU5"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_hzPdMCLW8WJiIdH.py" title="CFU6"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_tV80cRjbqpsa4vx.py" title="CFU7"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_6ltWFF70FswAL4b.py" title="CFU8"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_6CPz29TjqYShXbY.py" title="CFU9"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_cuimJUxdOAQqX1z.py" title="CFU10"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_LcWanl7IUwn0q6j.py" title="CFU11"></iframe>
-        <iframe src="https://py3.codeskulptor.org/#user309_SDZMVzwlYJk2skW.py" title="CFU12"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_5GeL8Ff0CIYsCNA.py" id="cfu1" title="CFU1"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_hQchAlvFeACOYjc.py" id="cfu2" title="CFU2"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_orklQA2PJ8y3VqF.py" id="cfu3" title="CFU3"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_We3ofbX961SxR8c.py" id="cfu4" title="CFU4"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_WJAnw9uQDV6uJlQ.py" id="cfu5" title="CFU5"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_hzPdMCLW8WJiIdH.py" id="cfu6" title="CFU6"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_tV80cRjbqpsa4vx.py" id="cfu7" title="CFU7"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_6ltWFF70FswAL4b.py" id="cfu8" title="CFU8"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_6CPz29TjqYShXbY.py" id="cfu9" title="CFU9"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_cuimJUxdOAQqX1z.py" id="cfu10" title="CFU10"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_LcWanl7IUwn0q6j.py" id="cfu11" title="CFU11"></iframe>
+        <iframe src="https://py3.codeskulptor.org/#user309_SDZMVzwlYJk2skW.py" id="cfu12" title="CFU12"></iframe>
     </div>
 
     <div class="unit-projects">
@@ -153,7 +156,18 @@
 <footer>
     <p>© 2024 Sharena's Portfolio</p>
 </footer>
-
+<script>
+     function showIframe(iframeId) {
+            // Hide all iframes
+            const iframes = document.getElementsByTagName('iframe');
+            for (let iframe of iframes) {
+                iframe.classList.remove('active');
+            }
+            
+            // Show the selected iframe
+            document.getElementById(iframeId).classList.add('active');
+        }
+</script>
 </body>
 </html>
 

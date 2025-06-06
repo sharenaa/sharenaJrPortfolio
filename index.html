@@ -1,59 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharena's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sharena Sharif – NatureNourish Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      color: #111;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 1.5em 1em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      margin-top: 1em;
+      padding-left: 0;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav a {
+      color: #4caf50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2em 5%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    h2 {
+      border-bottom: 2px solid #4caf50;
+      padding-bottom: 0.3em;
+      margin-bottom: 1em;
+      color: #1a1a1a;
+    }
+    iframe {
+      width: 100%;
+      height: 480px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-top: 1em;
+    }
+    .project {
+      margin-bottom: 2em;
+    }
+    .daffodil-img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      display: block;
+      margin: 1em auto;
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    footer {
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                 <li><a href="https://sharenaa.github.io/sharenaJrPortfolio/index.html">Home</a></li>
-                <li><a href="https://sharenaa.github.io/sharenaJrPortfolio/collection.html" target="_blank">Collection</a></li>
-                <li><a href="https://sharenaa.github.io/sharenaJrPortfolio/selection.html">Selection</a></li>
-                <li><a href="https://sharenaa.github.io/sharenaJrPortfolio/reflection.html">Reflection</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home">
-            <h2>Welcome to My Portfolio</h2>
-          <br>
-            <h3>This is my Junior Portfolio for Web & App Development!  </h3>
-            <p></p>
-        </section>
+<header>
+  <h1>Sharena Sharif – NatureNourish Portfolio</h1>
+  <p><em>"Save nature, and restore balance—your actions shape the future of the Earth."</em></p>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#games">Projects</a></li>
+      <li><a href="https://sharenaa.github.io/sharenaJrPortfolio/collection.html" target="_blank">Collection</a></li>
+      <li><a href="#design">Design Docs</a></li>
+      <li><a href="#competitions">Competitions</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <section id="collection">
-            <h2>Collection</h2>
-            <p></p>
-            <br>
-            <ul>
-                <li>Labs</li>
-                <li>Projects</li>
-                <li>Unit Assignments</li>
-                <li>Samples</li>
-            </ul>
-            <p></p>
-        </section>
+<main>
 
-        <section id="selection">
-            <h2>Selection</h2>
-            <p></p>
-        </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Sharena, a junior at TAEHS and a passionate aspiring game designer. I love blending art, storytelling, and interactivity to create games that educate and inspire. This portfolio features my creative projects—including my environmental game <strong>NatureNourish</strong>—and documents my journey in game development.</p>
+  </section>
 
-        <section id="reflection">
-            <h2>Reflection</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-        </section>
-    </main>
+  <!-- Game Projects -->
+  <section id="games">
+    <h2>🌿 Game Projects</h2>
 
-    <footer>
-        <p>© 2024 Sharena's Portfolio</p>
-    </footer>
+    <div class="project">
+      <h3>🌼 NatureNourish (Code.org)</h3>
+      <p><strong>Tools:</strong> App Lab, JavaScript</p>
+      <p><strong>Description:</strong> Collect trash, plant flowers, and restore the planet with help from Daffodil the dog. This interactive game teaches environmental stewardship in a playful way.</p>
+      <iframe src="https://studio.code.org/projects/applab/vzARs9DYhLXYcvFmv0E9V2ow7ga46L5Dr4bZ2SfwuIw/embed"></iframe>
+    </div>
+
+    <div class="project">
+      <h3>🌱 JR Garden Game (GitHub Pages)</h3>
+      <p><strong>Tools:</strong> HTML, CSS, JavaScript</p>
+      <p><strong>Description:</strong> A fun click-and-grow garden game I coded from scratch and hosted on GitHub Pages. It introduced me to layout, interactivity, and animation.</p>
+      <iframe src="https://sharenaa.github.io/jrGame/"></iframe>
+    </div>
+  </section>
+
+  <!-- Daffodil -->
+  <section>
+    <h2>🐶 Meet Daffodil</h2>
+    <img src="daffodil.png" alt="Daffodil character" class="daffodil-img">
+    <p>Daffodil is the cheerful, earth-toned dog companion in NatureNourish. Her story begins in a forest town, and she later becomes a guardian of the natural world. She guides players to clean up trash and plant hope!</p>
+  </section>
+
+  <!-- Design Docs -->
+  <section id="design">
+    <h2>📓 Design & Iteration</h2>
+    <p>Below are planning assets showing my game development process:</p>
+    <ul>
+      <li>✅ Brainstorm sketches for NatureNourish and character design</li>
+      <li>✅ Trash-fall flowchart and object interactions</li>
+      <li>✅ GDD outlining mechanics, story, visuals</li>
+    </ul>
+    <p><a href="https://drive.google.com/folderview?id=YOUR_LINK_HERE" target="_blank">View Design Docs Folder</a></p>
+  </section>
+
+  <!-- Competitions -->
+  <section id="competitions">
+    <h2>🏆 Competitions</h2>
+    <p>I submitted <strong>NatureNourish</strong> to the <em>Games for Change Student Challenge</em>. The theme was "Protecting the Environment," and I used my project to highlight how small actions make big changes.</p>
+  </section>
+
+  <!-- Reflection -->
+  <section id="reflection">
+    <h2>📝 Final Reflection</h2>
+    <p>Through this project and portfolio, I’ve grown as a creative problem-solver and storyteller. I’ve learned how to plan, test, and reflect on feedback, and I’ve strengthened my coding and UI skills. I’m excited to keep building games that connect with people and help protect the planet.</p>
+    <p>Thank you for reviewing my work!</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 Sharena Sharif | NatureNourish Portfolio</p>
+</footer>
+
 </body>
 </html>

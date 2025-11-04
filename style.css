@@ -1,127 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  background: #faf8ff;
+  color: #2e1b47;
+  line-height: 1.7;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1em 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #cbb4ff, #a58bff);
+  color: #fff;
+  text-align: center;
+  padding: 3em 1em 4em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+header h1 {
+  font-size: 2.4em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  font-size: 1.1em;
+  margin-top: 0.5em;
+  color: #f4eaff;
+  font-style: italic;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-top: 2em;
+  padding-left: 0;
 }
 
-nav ul li {
-    margin: 0 1.5em;
+nav a {
+  color: #efe9ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #1e90ff;
-    text-decoration: underline;
-    transform: scale(1.1);
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 main {
-    padding: 2em;
-    background-color: #f4f4f4;
+  padding: 3em 6%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 section {
-    margin-bottom: 2em;
-    padding: 2em;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4em;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5em 3em;
+  box-shadow: 0 6px 20px rgba(175, 140, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-section h1, section h2 {
-    margin-top: 0;
-    color: #333;
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(175, 140, 255, 0.25);
 }
 
-section h2 {
-    color: #babbf5;
+h2 {
+  border-bottom: 2px solid #b49aff;
+  padding-bottom: 0.4em;
+  margin-bottom: 1.2em;
+  color: #472e77;
+  font-weight: 600;
 }
 
-section a {
-    color: #1e90ff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-section a:hover {
-    color: #6a5acd;
+iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(150, 120, 255, 0.2);
+  margin-top: 1em;
 }
 
 footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  background: #b49aff;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+  margin-top: 3em;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  font-size: 0.95em;
 }
 
-button {
-    background-color: #6a5acd;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+a {
+  color: #7b5bff;
+  text-decoration: none;
 }
 
-button:hover {
-    background-color: #1e90ff;
+a:hover {
+  text-decoration: underline;
 }
 
-html {
-    scroll-behavior: smooth;
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #b49aff, #9376ff);
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1em;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 0.5em 0;
-    }
-
-    main {
-        padding: 1em;
-    }
-
-    section {
-        padding: 1.5em;
-    }
+.btn:hover {
+  background: linear-gradient(135deg, #9376ff, #b49aff);
+  transform: scale(1.05);
 }

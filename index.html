@@ -10,14 +10,14 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f7f4fa;
-      color: #2d2a32;
+      background: linear-gradient(180deg, #f9f8ff 0%, #f3ecff 100%);
+      color: #2b254a;
       overflow-x: hidden;
     }
 
     header {
       text-align: center;
-      padding: 5em 1em 3em;
+      padding: 6em 1em 3em;
       position: relative;
     }
 
@@ -29,7 +29,7 @@
     }
 
     header h1:hover {
-      transform: scale(1.1);
+      transform: scale(1.08);
       color: #9b6bd8;
     }
 
@@ -45,9 +45,7 @@
       transition: color 0.3s ease;
     }
 
-    .contact a:hover {
-      color: #6a42aa;
-    }
+    .contact a:hover { color: #6a42aa; }
 
     section {
       max-width: 900px;
@@ -58,10 +56,7 @@
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    section.visible { opacity: 1; transform: translateY(0); }
 
     h2 {
       font-size: 1.8em;
@@ -98,13 +93,29 @@
       transition: height 0.4s ease;
     }
 
-    .project:hover iframe {
-      height: 550px;
-    }
+    .project:hover iframe { height: 550px; }
 
     ul {
       margin-left: 1.5em;
       line-height: 1.8;
+    }
+
+    #contact a.resume-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #b49aff, #9376ff);
+      color: #fff;
+      padding: 0.8em 1.8em;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 1em;
+      transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    #contact a.resume-btn:hover {
+      background: linear-gradient(135deg, #9376ff, #b49aff);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(155,107,216,0.3);
     }
   </style>
 </head>
@@ -148,21 +159,32 @@
   <section id="accomplishments">
     <h2>Accomplishments</h2>
     <ul>
-      <li>🎓 Presented <strong>MentalSpark</strong> at the Apple Design Showcase 2025.</li>
-      <li>🎨 Taught elementary students the basics of graphic design and digital creativity.</li>
-      <li>🏅 Completed Web Development and HTML/CSS certification exams.</li>
-      <li>🧠 Recognized for excellence in UI/UX design and creative project leadership.</li>
+      <li>🎓 Presented <strong>MentalSpark</strong> at the Apple Design Showcase 2025</li>
+      <li>🎨 Taught elementary students the basics of graphic design and digital creativity</li>
+      <li>🏅 Completed Web Development and HTML/CSS certifications</li>
+      <li>🧠 Recognized for excellence in UI/UX design and creative project leadership</li>
     </ul>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li><strong>Design:</strong> UI/UX, Branding, Prototyping, Figma, Canva</li>
+      <li><strong>Design:</strong> UI/UX Design, Branding, Prototyping, Figma, Canva</li>
       <li><strong>Development:</strong> HTML, CSS, JavaScript, App Lab</li>
       <li><strong>Creative:</strong> Storyboarding, Character Design, Visual Direction</li>
       <li><strong>Soft Skills:</strong> Leadership, Collaboration, Presentation, Teaching</li>
     </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:sharena.shar@gmail.com">sharena.shar@gmail.com</a></p>
+    <p><a href="https://github.com/sharenaa" target="_blank">github.com/sharenaa</a></p>
+    <p>
+      <a href="Sharena%20Sharif%20Resume%202025.pdf" target="_blank" class="resume-btn">
+        View My Resume
+      </a>
+    </p>
   </section>
 
   <script>
@@ -177,23 +199,6 @@
     window.addEventListener("scroll", revealOnScroll);
     revealOnScroll();
   </script>
-
-
-  <section id="contact">
-  <h2>Contact</h2>
-  <p><a href="mailto:sharena.shar@gmail.com">sharena.shar@gmail.com</a></p>
-  <p><a href="https://github.com/sharenaa" target="_blank">github.com/sharenaa</a></p>
-  
-  <p>
-    <a href="Sharena%20Sharif%20Resume%202025.pdf" target="_blank" 
-       style="display:inline-block;background:#9b6bd8;color:#fff;
-              padding:0.75em 1.5em;border-radius:25px;
-              text-decoration:none;font-weight:600;
-              transition:background 0.3s ease;">
-      View My Resume
-    </a>
-  </p>
-</section>
 
 </body>
 </html>
